@@ -6,11 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+      body {
+        background-color: rgb(1, 129, 129);
+      }
+
         .dvd-logo {
   position: fixed;
   top: 0;
   left: 0;
   
+}
+
+img {
+
+}
+
+img:hover {
+  height: 300px;
 }
 
 @keyframes bounce {
@@ -26,17 +38,24 @@
 }
     </style>
 </head>
+
 <body>
     <div class="dvd-logo">
-        <img src="dvd-logo.png" alt="DVD logo">
+        <a href="#"><img src="dvd-logo.png" alt="DVD logo"></a>
       </div>
 
-      <script>
+     
+     
+     
+     
+     
+     
+     <script>
 const dvdLogo = document.querySelector('.dvd-logo');
 let x = 0;
 let y = 0;
-let xSpeed = 5;
-let ySpeed = 5;
+let xSpeed = 4;
+let ySpeed = 4;
 
 function moveLogo() {
   const screenWidth = window.innerWidth;
